@@ -1,7 +1,5 @@
-from django.http import request
-from django.shortcuts import render,redirect
+from django.shortcuts import render
 from newsapi import NewsApiClient
-from .models import Contact
 
 
 # Create your views here.
@@ -26,14 +24,5 @@ def index(request):
     return render(request,'articles/index.html', context={"mylist": mylist})
 
     
-def contact(request):
-    name = request.POST['name']
-    email =request.POST['email']
-    subject =request.POST['subject']
-    message =request.POST['message']
-
-    contact = Contact.objects.create(Name=name, Email=email, Subject=subject,Message= message)
-    contact.save()
-    return render(request,'articles/index.html')
 
 
