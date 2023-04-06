@@ -1,7 +1,6 @@
 ﻿asgiref
 certifi
 Django
-django-heroku
 gunicorn
 idna
 newsapi
