@@ -6,7 +6,7 @@ from newsapi.newsapi_client import NewsApiClient
 def index(request):
 
    
-    newsApi = NewsApiClient(api_key='a6d66a918fcf49a7902238dcdb2ae605')
+    newsApi = NewsApiClient(api_key='add api key')
     headLines = newsApi.get_top_headlines(sources='news24')
     articles = headLines['articles']
     desc = []
