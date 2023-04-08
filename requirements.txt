@@ -10,3 +10,4 @@ requests
 sqlparse
 urllib3
 whitenoise
+python_dotenv==0.21.0
